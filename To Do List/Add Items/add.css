@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e5e5e5;
+    font-family: Arial, sans-serif;
+}
+
+.form-container {
+    width: 380px;
+    background-color: #9fc5e8;
+    border-radius: 0.40rem;
+    box-shadow:  0 8px 16px rgba(0, 0, 0, 0.25);
+    padding: 30px;
+}
+
+.form-container h1 {
+    text-align: center;
+    color: #0b0b0b;
+    margin-bottom: 30px;
+    font-size: 2.2rem;
+}
+
+.todo-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.input-field,
+.textarea-field {
+    width: 100%;
+    border: none;
+    background-color: #d8cec0;
+    color: #000000;
+    padding: 12px;
+    font-size: 1.2rem;
+    outline: none;
+}
+
+.input-field::placeholder,
+.textarea-field::placeholder {
+    color: #4b4848;
+}
+
+.textarea-field {
+    height: 120px;
+    resize: none;
+}
+
+.priority-select {
+    width: 65%;
+}
+
+.button-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.submit-btn {
+    padding: 12px 30px;
+    border: none;
+    border-radius: 0.25rem;
+    background-color: #e77d99;
+    color: #090909;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+.submit-btn:hover {
+    background-color: #055a09;
+}

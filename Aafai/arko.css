@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: yellowgreen;
+}
+
+.container {
+    height: 100vh;
+    /* background-color: aquamarine; */
+}
+
+.container1 {
+    margin: 5rem;
+    width: 40%;
+    background-color: red;
+}
+
+.item {
+    background-color: rgb(251, 201, 237);
+    margin: 25px;
+    width: 50%;
+    padding: 2rem;
+}
