@@ -24,7 +24,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 let isLongText = todo.description.length > maxLength;
                 let shortText = isLongText ? todo.description.substring(0, maxLength) + "..." : todo.description;
 
-                // NAYA: Button haru lai card-footer bhitra Priority sangai rakhiyo
                 card.innerHTML = `
                     <h3>${todo.title}</h3>
                     <p class="desc-text">${shortText}</p>
@@ -71,13 +70,13 @@ document.addEventListener('DOMContentLoaded', function() {
                     }
                 });
 
-                // Edit button logic (Prompt ko satta add.html ma pathaune)
+                // Edit button logic 
                 const editBtn = card.querySelector('.edit-btn');
                 editBtn.addEventListener('click', function() {
                     // Kun chai edit garna lageko tesko ID save garne
                     localStorage.setItem('editIndex', index);
                     
-                    // add.html ma pathaune (Path tapai ko anusar milaunu hola)
+                    // sending to add.html
                     window.location.href = '/To Do List/Add Items/add.html'; 
                 });
 
