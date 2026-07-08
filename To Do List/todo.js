@@ -73,7 +73,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 // Edit button logic 
                 const editBtn = card.querySelector('.edit-btn');
                 editBtn.addEventListener('click', function() {
-                    // Kun chai edit garna lageko tesko ID save garne
+                    // save the ID which is going to be editted
                     localStorage.setItem('editIndex', index);
                     
                     // sending to add.html
